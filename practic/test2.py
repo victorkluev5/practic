@@ -3,7 +3,7 @@ from  PyQt6.QtWidgets import QWidget,  QApplication, QMainWindow, QLabel, QHBoxL
 from PyQt6.QtCore import Qt, QTimer
 from PyQt6.QtGui import QFont, QPixmap
 # from test import captc, pattern
-from wind import Wind
+from test_car import CarSelectionTest
 
 class Avtoriz(QMainWindow):
     
@@ -60,7 +60,7 @@ class Avtoriz(QMainWindow):
 
         if username == "1" and password == "1":
             
-            self.avtoriz = Wind()
+            self.avtoriz = CarSelectionTest()
             self.avtoriz.show()
         else:
             # self.captcha_dialog = QTimer()
